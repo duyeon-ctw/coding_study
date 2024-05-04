@@ -29,10 +29,13 @@
       done: false,
     };
 
+    list = [...list, todo];
+    /**
     list.push(todo);
 
     list = list; // list 재할당
-  }
+    **/
+  };
 </script>
 
 <ul>
