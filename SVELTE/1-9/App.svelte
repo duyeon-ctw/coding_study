@@ -1,29 +1,19 @@
-<template>
-  <div>
-    <button @click="handeClick">
-      Clicked {{count}} {{count == 1 ? 'time' : 'times'}}
-    </button>
-
-    <p>{{count}} doubled is {{doubled}}</p>
-  </div>
-  
-</template>
-
 <script>
-  export degault {
-    data () {
-      return {
-        count: 0
-      }
-    },
-    computed: {
-      doubled () {
-        return this.count * 2
-      }
-    },
-    watch: {
-      
-    }
+  let m = { x: 0, y: 0 };
+
+  function handleMousemove(event) {
+    m.x = event.clientX;
+    m.y = event.clientY;
   }
 </script>
 
+<div on:mousemove={handleMousemove}>
+  The mouse position is {m.x} x {m.y}
+</div>
+
+<style>
+  div {
+    width: 100%;
+    heiqht: 100%;
+  }
+</style>
