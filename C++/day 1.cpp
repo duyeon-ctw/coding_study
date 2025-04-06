@@ -9,3 +9,22 @@ int main(){
   cout << "후회하지 않으실 겁니다!" << endl;
   return 0;
 }
+
+
+#include <iostream>
+
+int main(){
+  using namespace std;
+
+  int carrots;
+
+  carrots = 25;
+
+  cout << "나는 당근을 ";
+  cout << carrots;
+  cout << "개 가지고 있다.";
+  cout << endl;
+  carrots = carrots - 1;
+  cout << "아삭아삭, 이제 당근은 " << carrots << "개 남아 있다." << endl;
+  return 0;
+}
