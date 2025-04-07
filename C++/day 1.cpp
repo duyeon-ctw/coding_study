@@ -11,6 +11,7 @@ int main(){
 }
 
 
+
 #include <iostream>
 
 int main(){
@@ -26,5 +27,23 @@ int main(){
   cout << endl;
   carrots = carrots - 1;
   cout << "아삭아삭, 이제 당근은 " << carrots << "개 남아 있다." << endl;
+  return 0;
+}
+
+
+
+#include <iostream>
+
+int main(){
+  using namespace std;
+
+  int carrots;
+
+  cout << "당근을 몇 개나 가지고 있니?" << endl;
+  cin >> carrots;
+  cout << "여기 두 개 더. ";
+  carrots = carrots + 2;
+  cout << "이제 당근은 모두 " << carrots << "개야." << endl;
+  
   return 0;
 }
